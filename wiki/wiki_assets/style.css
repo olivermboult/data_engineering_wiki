@@ -1,142 +1,38 @@
-/* Simpsons Fonts */
-@font-face {
-    font-family: "Silka";
-    src: url("../wiki_assets/fonts/Silka-Regular.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
 
 :root {
-    --md-text-font: "Silka", sans-serif;
-    --md-header-font: "Silka", sans-serif;
-    --md-code-font: "Roboto Mono", monospace;
+  /* Brand colours */
+  --sa-primary: #1B3A52;
+  --sa-secondary: #0A7A8A;
+  --sa-light: #F5F7FA;
+  --sa-white: #ffffff;
+
+  /* Fonts */
+  --sa-font-main: 'Silka', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
 }
 
-/* Simpsons Colours */
-:root {
-    /* Main Colours */
-    --SA-Indigo: #185B84;
-    --SA-Indigo-50Dark: #0C2D42;
-    --SA-Indigo-60Dark: #092434;
-    --SA-Indigo-70Dark: #071B27;
-    --SA-Indigo-80Dark: #04121A;
-    --SA-Indigo-90Dark: #02090D;
-    --SA-Indigo-50Light: #8BADC1;
-    --SA-Indigo-60Light: #A2BDCD;
-    --SA-Indigo-70Light: #B9CDDA;
-    --SA-Indigo-90Light: #E7EEF2;
-    --SA-Indigo-95Light: #F3F6F8;
-    --SA-Indigo-Background: #28343C;
-    --SA-Indigo-Code-Background: #3D484F;
-    --SA-Bleu: #0395FA;
-    --SA-Bleu-50Dark: #014A7D;
-    --SA-Bleu-50Light: #81CAFC;
-    --SA-Midnight-Green: #00515C;
-    --SA-Persian-Green: #1DAB98;
-    --SA-Emerald: #00D987;
-    --SA-Tea-Green: #B4F9CD;
-    --SA-Tea-Green-50Dark: #5A7C66;
-    --SA-Tea-Green-50Light: #D9FCE6;
-    --SA-Mustard: #FFDE83;
-    --SA-Mexican-Pink: #DC0D7F;
-    /* RAG Colours */
-    --SA-Red: #D2222D;
-    --SA-Amber: #FFBF00;
-    --SA-Green: #238823;
-    /* Other Colours */
-    --SA-White: #FFFFFF;
-}
+/* Example reusable components */
 
-[data-md-color-scheme="default"] {
-    /* Primary Colours */
-    --md-primary-fg-color: var(--SA-Indigo); /* Header background */
-    --md-primary-fg-color--light: var(--SA-Green); /* Hover states, subtle highlights (unseen) */
-    --md-primary-fg-color--dark: var(--SA-Amber); /* Scroll progress bar, shadows */
-    --md-primary-bg-color: var(--SA-White); /* Header Text, Header Icons */
-    /* Accent Colours */
-    --md-accent-fg-color: var(--SA-Amber); /* Search highlight, focus rings, selected tabs, Hover */
-    --md-accent-fg-color--transparent: var(--SA-Indigo-90Light); /* Ripple effects, subtle overlays, Search highlight */
-    --md-accent-bg-color: var(--SA-White); /* Background of accent elements */
-    --md-accent-bg-color--light: var(--SA-Green); /* Hover states for accent elements (unseen) */
-    /* Typography and Links */
-    --md-typeset-color: var(--SA-Indigo-80Dark); /* Main body text */
-    --md-typeset-a-color: var(--SA-Indigo); /* Hyperlinks */
-    --md-typeset-a-color--hover: var(--SA-Green); /* Hovered hyperlinks (unseen) */
-    /* Code Blocks */
-    --md-code-bg-color: var(--SA-Indigo-90Light); /* Background of inline and block code */
-    --md-code-fg-color: var(--SA-Indigo-60Dark); /* Text colour in code blocks */
-    --md-code-hl-color: var(--SA-Green); /* Highlighted lines in code blocks (unseen) */
-    --md-code-hl-number-color: var(--SA-Green); /* Numbers in syntax-highlighted code (unseen) */
-    --md-code-hl-string-color: var(--SA-Green); /* Strings in syntax-highlighted code (unseen)*/
-    --md-code-hl-keyword-color: var(--SA-Green); /* Keywords in syntax-highlighted code (unseen) */
-    --md-code-hl-function-color: var(--SA-Green); /* Function names in code  (unseen)*/
-    --md-code-hl-variable-color: var(--SA-Green); /* Variables in code (unseen) */
-    /* Footer Colours */
-    --md-footer-bg-color: var(--SA-Indigo); /* Footer background */
-    --md-footer-bg-color--dark: var(--SA-Indigo-70Dark); /* Footer background */
-    --md-footer-fg-color: var(--SA-Amber); /* Footer text */
-    --md-footer-fg-color--light: var(--SA-Indigo-50Light); /* Subdued footer text */
-    --md-footer-fg-color--lighter: var(--SA-White); /* Even more subdued footer text */
-    /* Other Colours */
-    --md-default-bg-color: var(--SA-White); /* Page background */
-    --md-default-fg-color: var(--SA-Indigo-50Dark); /*  Default foreground (text) colour, Search text*/
-    --md-shadow-z1: rgba(0, 0, 0, 0.1); /*  Elevation shadows for cards, nav, etc. (unseen)*/
-    --md-shadow-z2: rgba(0, 0, 0, 0.2); /*  Elevation shadows for cards, nav, etc. (unseen) */
-}
-
-
-[data-md-color-scheme="slate"] {
-    /* Primary Colours */
-    --md-primary-fg-color: var(--SA-Indigo); /* Header background */
-    --md-primary-fg-color--light: var(--SA-Green); /* Hover states, subtle highlights (unseen) */
-    --md-primary-fg-color--dark: var(--SA-Amber); /* Scroll progress bar, shadows */
-    --md-primary-bg-color: var(--SA-White); /* Header Text, Header Icons */
-    /* Accent Colours */
-    --md-accent-fg-color: var(--SA-Amber); /* Search highlight, focus rings, selected tabs, Hover */
-    --md-accent-fg-color--transparent: var(--SA-Indigo-Code-Background); /* Ripple effects, subtle overlays, Search highlight */
-    --md-accent-bg-color: var(--SA-White); /* Background of accent elements */
-    --md-accent-bg-color--light: var(--SA-Green); /* Hover states for accent elements (unseen) */
-    /* Typography and Links */
-    --md-typeset-color: var(--SA-White); /* Main body text */
-    --md-typeset-a-color: var(--SA-Indigo-50Light); /* Hyperlinks */
-    --md-typeset-a-color--hover: var(--SA-Green); /* Hovered hyperlinks (unseen) */
-    /* Code Blocks */
-    --md-code-bg-color: var(--SA-Indigo-Code-Background); /* Background of inline and block code */
-    --md-code-fg-color: var(--SA-Indigo-50Light); /* Text colour in code blocks */
-    --md-code-hl-color: var(--SA-Green); /* Highlighted lines in code blocks (unseen) */
-    --md-code-hl-number-color: var(--SA-Green); /* Numbers in syntax-highlighted code (unseen) */
-    --md-code-hl-string-color: var(--SA-Green); /* Strings in syntax-highlighted code (unseen)*/
-    --md-code-hl-keyword-color: var(--SA-Green); /* Keywords in syntax-highlighted code (unseen) */
-    --md-code-hl-function-color: var(--SA-Green); /* Function names in code  (unseen)*/
-    --md-code-hl-variable-color: var(--SA-Green); /* Variables in code (unseen) */
-    /* Footer Colours */
-    --md-footer-bg-color: var(--SA-Indigo); /* Footer background */
-    --md-footer-bg-color--dark: var(--SA-Indigo-70Dark); /* Footer background */
-    --md-footer-fg-color: var(--SA-Amber); /* Footer text */
-    --md-footer-fg-color--light: var(--SA-Indigo-50Light); /* Subdued footer text */
-    --md-footer-fg-color--lighter: var(--SA-White); /* Even more subdued footer text */
-    /* Other Colours */
-    --md-default-bg-color: var(--SA-Indigo-Background); /* Page background */
-    --md-default-fg-color: var(--SA-Indigo-50Light); /*  Default foreground (text) colour, Search text*/
-    --md-shadow-z1: rgba(0, 0, 0, 0.3); /*  Elevation shadows for cards, nav, etc. (unseen)*/
-    --md-shadow-z2: rgba(0, 0, 0, 0.5); /*  Elevation shadows for cards, nav, etc. (unseen)*/
-}                                                                 
-
-
-/* Example reusable elements */
 .hero {
-  padding: 40px;
-  background: linear-gradient(135deg, var(--brand-primary), var(--brand-secondary));
-  border-radius: 12px;
-  color: white;
-  font-family: var(--font-main);
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--sa-primary) 0%, var(--sa-secondary) 100%);
+  border-radius: 8px;
+  margin: 20px 0;
 }
 
-.card {
-  border-left: 5px solid var(--brand-accent);
-  background: var(--text-light);
-  padding: 20px;
-  margin: 20px 0;
-  font-family: var(--font-main);
-  color: var(--text-dark);
+.hero h1 {
+  font-family: var(--sa-font-main);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--sa-white);
+  margin: 0 0 20px 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero p {
+  font-family: var(--sa-font-main);
+  font-size: 20px;
+  color: var(--sa-light);
+  margin: 0;
+  font-weight: 400;
 }
