@@ -1,11 +1,7 @@
-[[include: /wiki/styles.md]]
 
 <div class="hero">
-
-  <h1>Data Engineering Team</h1>
-
-  <p>Modern data platform solutions and ETL/ELT pipelines</p>
-
+  <h1>Data Engineering Team</h1>
+  <p>Modern data platform solutions and ETL/ELT pipelines</p>
 </div>
 
 A structured lifecycle for delivering date engineering projects, from first engagement through to long-term value realisation.
