@@ -17,7 +17,7 @@ docs_dir: wiki                                                    # Directory co
 theme:
   name: material                                                  # Use the Material for MkDocs theme
   custom_dir: wiki/wiki_assets                                    # Path to custom theme overrides (e.g., templates, partials)
-  #logo: wiki/wiki_assets/SmallLogo.png                            # Custom Logo
+  #logo: wiki/wiki_assets/SmallLogo.png                           # Custom Logo
   features: 
   # Navigation enhancements
     - navigation.instant                                                # Enables Single Page Application-like instant loading for faster navigation
@@ -61,51 +61,20 @@ theme:
 
   language: en                                                          # Language of the UI elements
 
-#nav:
-#  - Home:
-#      - Overview: index.md
-#      - Get Involved: 
-#        - Task Management: Home/TaskManagement.md
-#  - The Principles: 
-#    - Objectives: Principles/Objectives.md
-#    - Development:
-#        - Accessing the Framework: Principles/Development/Access.md
-#        - Repository & Branching: Principles/Development/Repository.md
-#        - Approval Process: Principles/Development/Approvals.md
-#        - Development Workflow: Principles/Development/Processes.md
-#        - Versioning Strategy: Principles/Development/Versioning.md
-#    - Documentation: 
-#        - Overview: Principles/Documentation/Overview.md
-#  - The Framework: 
-#    - Deployment: 
-#        - deploy_documentation: Framework/Deployment/deploy_documentation.md
-#    - Azure Data Factory: 
-#        - High Level Architecture: Framework/Platforms/AzureDataFactory/HighLevel.md
-#        - Components: 
-#            - Linked Services: Framework/Platforms/AzureDataFactory/Components/LinkedServices.md
+nav:
+  - Home: index.md
+  - The Project Delivery Framework: 
+    - Overview: project_delivery_framework/project_delivery_framework.md
+    - Initation: 
+      - Design: 
+        - Strategy & Outcomes:
+          - Guiding Principles: project_delivery_framework/initiation/design/strategy_and_outcomes/guiding_principles.md
+        - Environments & Workspaces:
+          - Domain Architecture: project_delivery_framework/initiation/design/environments_and_workspaces/domain_architecture.md
+
 
 plugins:
   - search                                                              # Enables the built-in Material for MkDocs search plugin
-  - mermaid2                                                            # Enables Mermaid diagrams
-  - print-site:
-      add_to_navigation: true
-      print_page_title: 'Export'
-      print_page_basename: 'export_data_engineering_wiki'
-      # Table of contents
-      add_table_of_contents: true
-      toc_title: 'Table of Contents'
-      toc_depth: 3
-      # Content-related
-      add_full_urls: false
-      enumerate_headings: false
-      enumerate_figures: false
-      add_cover_page: false
-      cover_page_template: ""
-      add_print_site_banner: false
-      path_to_pdf: ""
-      include_css: true
-      enabled: true
-      exclude:
 
 # Additional custom styles
 extra_css:
