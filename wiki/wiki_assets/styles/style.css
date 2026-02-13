@@ -216,9 +216,7 @@
 
 /*callout base*/
 .callout {
-  --callout-colour: var(--wiki-bleu);     /* default*/
-
-  border-left: 5px solid var(--callout-colour);
+  border-left: 5px solid var(--wiki-bleu);
   padding: 14px 16px;
   margin: 18px 0;
   border-radius: 8px;
@@ -226,22 +224,25 @@
   font-family: var(--md-text-font);
 }
 
-.callout title {
+.callout__title {
   font-weight: 700;
   margin: 0 0 6px 0;
-  color: var(--callout-colour);
+  color: var(--md-typeset-color);
 }
 
-.callout body {
+.callout__body {
   margin: 0;
   color: var(--md-typeset-color);
 }
 
 /*callout components*/
-.callout--info { --callout-colour: var(--wiki-bleu); }
-.callout--positive { --callout-colour: var(--wiki-green); }
-.callout--warning { --callout-colour: var(--wiki-amber); }
-.callout--negative  { --callout-colour: var(--wiki-red); }
+
+.callout--info { border-left-color: var(--wiki-bleu); }
+.callout--success { border-left-color: var(--wiki-green); }
+.callout--warning { border-left-color: var(--wiki-amber); }
+.callout--danger  { border-left-color: var(--wiki-red); }
+
+
 
 /* META FOOTER (page information) */
 .page-meta {
