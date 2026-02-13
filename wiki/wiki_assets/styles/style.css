@@ -225,7 +225,7 @@
 .callout--info { border-left-color: var(--wiki-bleu); }
 .callout--success { border-left-color: var(--wiki-green); }
 .callout--warning { border-left-color: var(--wiki-amber); }
-.callout--danger  { border-left-color: var(--wiki-red); }
+.callout--negative  { border-left-color: var(--wiki-red); }
 
 /* META FOOTER (page information) */
 .page-meta {
