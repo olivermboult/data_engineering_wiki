@@ -1,5 +1,3 @@
-# Wiki Contribution Guidelines
-
 <div class="hero hero--navy-to-indigo">
   <h1>Wiki Contribution Guidelines</h1>
   <p>Standards, best practices, and governance for the Knowledge Hub</p>
