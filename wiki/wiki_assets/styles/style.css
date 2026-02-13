@@ -167,23 +167,21 @@
 
 /* 
 ------------------------------
-  Wiki Components
+  Reusable Components
 ------------------------------
 */
 
-/* 
-------------------------------
-  Headers
-------------------------------
-*/
-
-/*header base*/
+/* headers */
 .header {
   text-align: center;
   padding: 40px 20px;
   background: linear-gradient(135deg, var(--wiki-inidgo-20-d) 0%, var(--wiki-inidgo-20-l) 100%);
   border-radius: 10px;
   margin: 20px 0;
+}
+
+.header--wiki-guide {
+  background: linear-gradient(135deg, var(--wiki-midnight-green-20-d) 0%, var(--wiki-midnight-green-20-l) 100%);
 }
 
 .header h1 {
@@ -203,18 +201,7 @@
   font-weight: 400;
 }
 
-/*header components*/
-.header--wiki-guide {
-  background: linear-gradient(135deg, var(--wiki-midnight-green-20-d) 0%, var(--wiki-midnight-green-20-l) 100%);
-}
-
-/* 
-------------------------------
-  Callouts
-------------------------------
-*/
-
-/*callout base*/
+/* callouts */
 .callout {
   border-left: 5px solid var(--wiki-bleu);
   padding: 14px 16px;
@@ -235,14 +222,10 @@
   color: var(--md-typeset-color);
 }
 
-/*callout components*/
-
 .callout--info { border-left-color: var(--wiki-bleu); }
-.callout--positive { border-left-color: var(--wiki-green); }
+.callout--success { border-left-color: var(--wiki-green); }
 .callout--warning { border-left-color: var(--wiki-amber); }
-.callout--negative  { border-left-color: var(--wiki-red); }
-
-
+.callout--danger  { border-left-color: var(--wiki-red); }
 
 /* META FOOTER (page information) */
 .page-meta {

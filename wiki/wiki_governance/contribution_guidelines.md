@@ -5,19 +5,16 @@
 
 ---
 
-<div class="callout callout--positive">
-  <p class="callout__title">🎯 Purpose of this wiki</p>
-  <p class="callout__body">
-  The Knowledge Hub exists to be the single source of truth for:
+## 🎯 Purpose of This Wiki
 
-    - **Technical documentation** – architecture patterns, design decisions, implementation guides
-    - **Team knowledge** – best practices, lessons learned, FAQs
-    - **Service offerings** – accelerators, fixed-price offerings, capabilities
-    - **Operational procedures** – runbooks, troubleshooting guides, standard processes
-  </p>
-</div>
+The Knowledge Hub exists to be the single source of truth for:
 
-<div class="callout callout--negative">
+- **Technical documentation** – architecture patterns, design decisions, implementation guides
+- **Team knowledge** – best practices, lessons learned, FAQs
+- **Service offerings** – accelerators, fixed-price offerings, capabilities
+- **Operational procedures** – runbooks, troubleshooting guides, standard processes
+
+<div class="callout callout--danger">
   <p class="callout__title">❌ What this wiki is NOT for</p>
   <p class="callout__body">
     Use SharePoint/Teams for document storage, binary files (Word/PDF/Excel), and client-specific materials.
