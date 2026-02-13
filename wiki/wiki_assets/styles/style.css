@@ -216,7 +216,7 @@
 
 /*callout base*/
 .callout {
-  --callout-colour: var(--wiki-indigo);     /* default*/
+  --callout-colour: var(--wiki-bleu);     /* default*/
 
   border-left: 5px solid var(--callout-colour);
   padding: 14px 16px;
@@ -226,13 +226,13 @@
   font-family: var(--md-text-font);
 }
 
-.callout__title {
+.callout title {
   font-weight: 700;
   margin: 0 0 6px 0;
   color: var(--callout-colour);
 }
 
-.callout__body {
+.callout body {
   margin: 0;
   color: var(--md-typeset-color);
 }

@@ -6,15 +6,15 @@
 ---
 
 <div class="callout callout--positive">
-  <p class="callout__title">🎯 Purpose of This Wiki</p>
-  <p class="callout__body">
+  <title>🎯 Purpose of this wiki</title>
+  <body>
   The Knowledge Hub exists to be the single source of truth for:
 
     - **Technical documentation** – architecture patterns, design decisions, implementation guides
     - **Team knowledge** – best practices, lessons learned, FAQs
     - **Service offerings** – accelerators, fixed-price offerings, capabilities
     - **Operational procedures** – runbooks, troubleshooting guides, standard processes
-  </p>
+  </body>
 </div>
 
 <div class="callout callout--negative">
