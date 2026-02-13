@@ -17,9 +17,8 @@ The Knowledge Hub exists to be the single source of truth for:
 <div class="callout callout--negative">
   <p class="callout__title">❌ What this wiki is NOT for</p>
   <p class="callout__body">
-
-- Use SharePoint/Teams for document storage, binary files (Word/PDF/Excel), and client-specific materials.
-- The wiki should link to authoritative files, not duplicate them.
+    <li> Use SharePoint/Teams for document storage, binary files (Word/PDF/Excel), and client-specific materials. </li>
+    <li> The wiki should link to authoritative files, not duplicate them. </li>
 
   </p>
 </div>
