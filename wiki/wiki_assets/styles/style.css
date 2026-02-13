@@ -28,17 +28,21 @@
 :root {
   /* Main Colours */
   --SA-Indigo: #185B84;
-  --SA-Indigo-50Dark: #0C2D42;
-  --SA-Indigo-60Dark: #092434;
-  --SA-Indigo-70Dark: #071B27;
-  --SA-Indigo-80Dark: #04121A;
-  --SA-Indigo-90Dark: #02090D;
 
-  --SA-Indigo-50Light: #8BADC1;
-  --SA-Indigo-60Light: #A2BDCD;
-  --SA-Indigo-70Light: #B9CDDA;
-  --SA-Indigo-90Light: #E7EEF2;
-  --SA-Indigo-95Light: #F3F6F8;
+  /* Darker variants = mix with black */
+  --SA-Indigo-50Dark: color-mix(in oklab, var(--SA-Indigo), black 50%);
+  --SA-Indigo-60Dark: color-mix(in oklab, var(--SA-Indigo), black 60%);
+  --SA-Indigo-70Dark: color-mix(in oklab, var(--SA-Indigo), black 70%);
+  --SA-Indigo-80Dark: color-mix(in oklab, var(--SA-Indigo), black 80%);
+  --SA-Indigo-90Dark: color-mix(in oklab, var(--SA-Indigo), black 90%);
+
+  /* Lighter variants = mix with white */
+  --SA-Indigo-50Light: color-mix(in oklab, var(--SA-Indigo), white 50%);
+  --SA-Indigo-60Light: color-mix(in oklab, var(--SA-Indigo), white 60%);
+  --SA-Indigo-70Light: color-mix(in oklab, var(--SA-Indigo), white 70%);
+  --SA-Indigo-90Light: color-mix(in oklab, var(--SA-Indigo), white 90%);
+  --SA-Indigo-95Light: color-mix(in oklab, var(--SA-Indigo), white 95%);
+
 
   --SA-Indigo-Background: #28343C;
   --SA-Indigo-Code-Background: #3D484F;
