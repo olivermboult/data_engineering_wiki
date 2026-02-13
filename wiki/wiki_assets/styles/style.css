@@ -167,13 +167,13 @@
 
 /* 
 ------------------------------
-  Components
+  Wiki Components
 ------------------------------
 */
 
 /* 
 ------------------------------
-  headers
+  Headers
 ------------------------------
 */
 
@@ -210,7 +210,7 @@
 
 /* 
 ------------------------------
-  callouts
+  Callouts
 ------------------------------
 */
 
@@ -238,10 +238,10 @@
 }
 
 /*callout components*/
-.callout--info { border-left-color: var(--wiki-bleu); }
-.callout--positive { border-left-color: var(--wiki-green); }
-.callout--warning { border-left-color: var(--wiki-amber); }
-.callout--negative  { border-left-color: var(--wiki-red); }
+.callout--info { --callout-colour: var(--wiki-bleu); }
+.callout--positive { --callout-colour: var(--wiki-green); }
+.callout--warning { --callout-colour: var(--wiki-amber); }
+.callout--negative  { --callout-colour: var(--wiki-red); }
 
 /* META FOOTER (page information) */
 .page-meta {
