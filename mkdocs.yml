@@ -63,6 +63,11 @@ theme:
 
 nav:
   - Home: index.md
+
+  - Governance:
+      - Contribution Guidelines: wiki_governance/contribution-guidelines.md
+      - Page Template: wiki_governance/page-template.md
+
   - The Project Delivery Framework: 
     - Overview: project_delivery_framework/project_delivery_framework.md
     - Initation: 
@@ -78,4 +83,4 @@ plugins:
 
 # Additional custom styles
 extra_css:
-  - style.css                                                       # Path to your custom CSS file for styling overrides
+  - styles/style.css                                                       # Path to your custom CSS file for styling overrides

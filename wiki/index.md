@@ -1,6 +1,3 @@
-# Welcome to MkDocs
-
-
 <div class="hero">
   <h1>SA Knowledge Hub</h1>
   <p>Your central repository for Simpson Associates technical knowledge, best practices, and project documentation</p>

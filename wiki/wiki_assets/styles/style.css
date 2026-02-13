@@ -1,0 +1,260 @@
+
+/* 
+------------------------------
+  Wiki Fonts
+------------------------------ 
+*/
+
+@font-face {
+  font-family: "Silka";
+  src: url("../fonts/Silka-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Material for MkDocs font hooks */
+:root {
+  --md-text-font: "Silka", sans-serif;
+  --md-header-font: "Silka", sans-serif;
+  --md-code-font: "Roboto Mono", monospace;
+}
+
+/* 
+------------------------------
+  Wiki Colours
+------------------------------ 
+*/
+
+:root {
+  /* Main Colours */
+  --SA-Indigo: #185B84;
+  --SA-Indigo-50Dark: #0C2D42;
+  --SA-Indigo-60Dark: #092434;
+  --SA-Indigo-70Dark: #071B27;
+  --SA-Indigo-80Dark: #04121A;
+  --SA-Indigo-90Dark: #02090D;
+
+  --SA-Indigo-50Light: #8BADC1;
+  --SA-Indigo-60Light: #A2BDCD;
+  --SA-Indigo-70Light: #B9CDDA;
+  --SA-Indigo-90Light: #E7EEF2;
+  --SA-Indigo-95Light: #F3F6F8;
+
+  --SA-Indigo-Background: #28343C;
+  --SA-Indigo-Code-Background: #3D484F;
+
+  --SA-Bleu: #0395FA;
+  --SA-Bleu-50Dark: #014A7D;
+  --SA-Bleu-50Light: #81CAFC;
+
+  --SA-Midnight-Green: #00515C;
+  --SA-Persian-Green: #1DAB98;
+  --SA-Emerald: #00D987;
+  --SA-Tea-Green: #B4F9CD;
+  --SA-Tea-Green-50Dark: #5A7C66;
+  --SA-Tea-Green-50Light: #D9FCE6;
+
+  --SA-Mustard: #FFDE83;
+  --SA-Mexican-Pink: #DC0D7F;
+
+  /* RAG Colours */
+  --SA-Red: #D2222D;
+  --SA-Amber: #FFBF00;
+  --SA-Green: #238823;
+
+  /* Other Colours */
+  --SA-White: #FFFFFF;
+}
+
+/*
+------------------------------
+  Material Theme Overrides
+  (Light mode / default)
+------------------------------
+*/
+
+[data-md-color-scheme="default"] {
+  /* Primary */
+  --md-primary-fg-color: var(--SA-Indigo);
+  --md-primary-fg-color--light: var(--SA-Green);
+  --md-primary-fg-color--dark: var(--SA-Amber);
+  --md-primary-bg-color: var(--SA-White);
+
+  /* Accent */
+  --md-accent-fg-color: var(--SA-Amber);
+  --md-accent-fg-color--transparent: var(--SA-Indigo-90Light);
+  --md-accent-bg-color: var(--SA-White);
+  --md-accent-bg-color--light: var(--SA-Green);
+
+  /* Typography & links */
+  --md-typeset-color: var(--SA-Indigo-80Dark);
+  --md-typeset-a-color: var(--SA-Indigo);
+  --md-typeset-a-color--hover: var(--SA-Green);
+
+  /* Code */
+  --md-code-bg-color: var(--SA-Indigo-90Light);
+  --md-code-fg-color: var(--SA-Indigo-60Dark);
+
+  /* Footer */
+  --md-footer-bg-color: var(--SA-Indigo);
+  --md-footer-bg-color--dark: var(--SA-Indigo-70Dark);
+  --md-footer-fg-color: var(--SA-Amber);
+  --md-footer-fg-color--light: var(--SA-Indigo-50Light);
+  --md-footer-fg-color--lighter: var(--SA-White);
+
+  /* Background */
+  --md-default-bg-color: var(--SA-White);
+  --md-default-fg-color: var(--SA-Indigo-50Dark);
+}
+
+/*
+------------------------------
+  Material Theme Overrides
+  (Dark mode / slate)
+------------------------------
+*/
+
+[data-md-color-scheme="slate"] {
+  /* Primary */
+  --md-primary-fg-color: var(--SA-Indigo);
+  --md-primary-fg-color--light: var(--SA-Green);
+  --md-primary-fg-color--dark: var(--SA-Amber);
+  --md-primary-bg-color: var(--SA-White);
+
+  /* Accent */
+  --md-accent-fg-color: var(--SA-Amber);
+  --md-accent-fg-color--transparent: var(--SA-Indigo-Code-Background);
+  --md-accent-bg-color: var(--SA-White);
+  --md-accent-bg-color--light: var(--SA-Green);
+
+  /* Typography & links */
+  --md-typeset-color: var(--SA-White);
+  --md-typeset-a-color: var(--SA-Indigo-50Light);
+
+  /* Code */
+  --md-code-bg-color: var(--SA-Indigo-Code-Background);
+  --md-code-fg-color: var(--SA-Indigo-50Light);
+
+  /* Footer */
+  --md-footer-bg-color: var(--SA-Indigo);
+  --md-footer-bg-color--dark: var(--SA-Indigo-70Dark);
+  --md-footer-fg-color: var(--SA-Amber);
+  --md-footer-fg-color--light: var(--SA-Indigo-50Light);
+  --md-footer-fg-color--lighter: var(--SA-White);
+
+  /* Background */
+  --md-default-bg-color: var(--SA-Indigo-Background);
+  --md-default-fg-color: var(--SA-Indigo-50Light);
+}
+
+/* 
+------------------------------
+  Reusable Components
+------------------------------
+*/
+
+/* HERO */
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--SA-Indigo) 0%, var(--SA-Green) 100%);
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.hero--navy-to-indigo {
+  background: linear-gradient(135deg, var(--SA-Indigo-80Dark) 0%, var(--SA-Indigo) 100%);
+}
+.hero--teal-to-indigo {
+  background: linear-gradient(135deg, var(--SA-Midnight-Green) 0%, var(--SA-Indigo) 100%);
+}
+.hero--indigo-to-bleu {
+  background: linear-gradient(135deg, var(--SA-Indigo) 0%, var(--SA-Bleu) 100%);
+}
+
+.hero h1 {
+  font-family: var(--md-text-font);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--SA-White);
+  margin: 0 0 16px 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.hero p {
+  font-family: var(--md-text-font);
+  font-size: 20px;
+  color: var(--SA-Indigo-90Light);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* CALLOUTS */
+.callout {
+  border-left: 5px solid var(--SA-Bleu);
+  padding: 14px 16px;
+  margin: 18px 0;
+  border-radius: 8px;
+  background: var(--md-code-bg-color);
+  font-family: var(--md-text-font);
+}
+
+.callout__title {
+  font-weight: 700;
+  margin: 0 0 6px 0;
+  color: var(--md-typeset-color);
+}
+
+.callout__body {
+  margin: 0;
+  color: var(--md-typeset-color);
+}
+
+.callout--info { border-left-color: var(--SA-Bleu); }
+.callout--success { border-left-color: var(--SA-Green); }
+.callout--warning { border-left-color: var(--SA-Amber); }
+.callout--danger  { border-left-color: var(--SA-Red); }
+
+/* META FOOTER (page information) */
+.page-meta {
+  width: 100%;
+  max-width: 1000px;
+  margin: 24px auto;
+}
+
+.page-meta table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.page-meta th {
+  background: var(--SA-Indigo);
+  color: var(--SA-White);
+  text-align: left;
+  padding: 12px;
+}
+
+.page-meta td {
+  padding: 12px;
+  border: 1px solid var(--SA-Indigo-90Light);
+  color: var(--md-typeset-color);
+}
+
+.page-meta tr:nth-child(even) td {
+  background: var(--SA-Indigo-95Light);
+}
+
+/* BADGES (optional) */
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--md-text-font);
+  letter-spacing: 0.02em;
+}
+
+.badge--draft { background: var(--SA-Amber); color: var(--SA-Indigo-80Dark); }
+.badge--approved { background: var(--SA-Green); color: var(--SA-White); }
+.badge--deprecated { background: var(--SA-Red); color: var(--SA-White); }
