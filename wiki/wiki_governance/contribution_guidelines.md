@@ -1,4 +1,4 @@
-<div class="hero hero--navy-to-indigo">
+<div class="header header--wiki-guide">
   <h1>Wiki Contribution Guidelines</h1>
   <p>Standards, best practices, and governance for the Knowledge Hub</p>
 </div>

@@ -1,7 +1,7 @@
 
 # Page Title
 
-<div class="hero hero--navy-to-indigo">
+<div class="header header--wiki-guide">
   <h1>Page Title</h1>
   <p>One-line summary of what this page covers</p>
 </div>
