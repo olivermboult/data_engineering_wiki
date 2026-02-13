@@ -19,7 +19,6 @@ The Knowledge Hub exists to be the single source of truth for:
   <p class="callout__body">
     <li> Use SharePoint/Teams for document storage, binary files (Word/PDF/Excel), and client-specific materials. </li>
     <li> The wiki should link to authoritative files, not duplicate them. </li>
-
   </p>
 </div>
 
