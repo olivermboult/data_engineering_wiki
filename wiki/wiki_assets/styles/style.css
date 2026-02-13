@@ -37,12 +37,20 @@
   --wiki-mexican-pink: #DC0D7F;
 
   /* Inidigo - Darker variants*/
+  --wiki-inidgo-10-d: color-mix(in oklab, var(--wiki-inidgo), black 10%);
+  --wiki-inidgo-20-d: color-mix(in oklab, var(--wiki-inidgo), black 20%);
+  --wiki-inidgo-30-d: color-mix(in oklab, var(--wiki-inidgo), black 30%);
+  --wiki-inidgo-40-d: color-mix(in oklab, var(--wiki-inidgo), black 40%);
   --wiki-inidgo-50-d: color-mix(in oklab, var(--wiki-inidgo), black 50%);
   --wiki-inidgo-60-d: color-mix(in oklab, var(--wiki-inidgo), black 60%);
   --wiki-inidgo-70-d: color-mix(in oklab, var(--wiki-inidgo), black 70%);
   --wiki-inidgo-80-d: color-mix(in oklab, var(--wiki-inidgo), black 80%);
   --wiki-inidgo-90-d: color-mix(in oklab, var(--wiki-inidgo), black 90%);
   /* Inidgo - Lighter variants*/
+  --wiki-inidgo-10-l: color-mix(in oklab, var(--wiki-inidgo), white 10%);
+  --wiki-inidgo-20-l: color-mix(in oklab, var(--wiki-inidgo), white 20%);
+  --wiki-inidgo-30-l: color-mix(in oklab, var(--wiki-inidgo), white 30%);
+  --wiki-inidgo-40-l: color-mix(in oklab, var(--wiki-inidgo), white 40%);
   --wiki-inidgo-50-l: color-mix(in oklab, var(--wiki-inidgo), white 50%);
   --wiki-inidgo-60-l: color-mix(in oklab, var(--wiki-inidgo), white 60%);
   --wiki-inidgo-70-l: color-mix(in oklab, var(--wiki-inidgo), white 70%);
@@ -55,9 +63,9 @@
   --wiki-bleu-50-l: color-mix(in oklab, var(--wiki-bleu), white 50%);
 
   /* Midnight Green - Darker variants*/
-  --wiki-midnight-green-50-d: color-mix(in oklab, var(--wiki-midnight-green), black 50%);
+  --wiki-midnight-green-20-d: color-mix(in oklab, var(--wiki-midnight-green), black 20%);
   /* Midnight Green - Lighter variants*/
-  --wiki-midnight-green-50-l: color-mix(in oklab, var(--wiki-midnight-green), white 50%);
+  --wiki-midnight-green-20-l: color-mix(in oklab, var(--wiki-midnight-green), white 20%);
 
   /* Tea Green - Darker variants*/
   --wiki-tea-green-50-d: color-mix(in oklab, var(--wiki-tea-green), black 50%);
@@ -167,13 +175,13 @@
 .header {
   text-align: center;
   padding: 40px 20px;
-  background: linear-gradient(135deg, var(--wiki-inidgo) 0%, var(--wiki-inidgo-50-l) 100%);
+  background: linear-gradient(135deg, var(--wiki-inidgo) 0%, var(--wiki-inidgo-20-l) 100%);
   border-radius: 10px;
   margin: 20px 0;
 }
 
 .header--wiki-guide {
-  background: linear-gradient(135deg, var(--wiki-midnight-green) 0%, var(--wiki-midnight-green-50-l) 100%);
+  background: linear-gradient(135deg, var(--wiki-midnight-green) 0%, var(--wiki-midnight-green-20-l) 100%);
 }
 
 .header h1 {
