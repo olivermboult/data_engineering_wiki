@@ -229,7 +229,7 @@
 
 /* Variants: set the accent once */
 .callout--info    { --callout-accent: var(--wiki-bleu); }
-.callout--success { --callout-accent: var(--wiki-green); }
+.callout--positive{ --callout-accent: var(--wiki-green); }
 .callout--warning { --callout-accent: var(--wiki-amber); }
 .callout--negative{ --callout-accent: var(--wiki-red); }
 
