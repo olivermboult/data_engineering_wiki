@@ -1,0 +1,279 @@
+
+/* 
+------------------------------
+  Wiki Fonts
+------------------------------ 
+*/
+
+@font-face {
+  font-family: "Silka";
+  src: url("../fonts/Silka-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Material for MkDocs font hooks */
+:root {
+  --md-text-font: "Silka", sans-serif;
+  --md-header-font: "Silka", sans-serif;
+  --md-code-font: "Roboto Mono", monospace;
+}
+
+/* 
+------------------------------
+  Wiki Colours
+------------------------------ 
+*/
+
+:root {
+  /* Main Colours */
+  --wiki-inidgo: #185B84;
+  --wiki-bleu: #0395FA;
+  --wiki-midnight-green: #00515C;
+  --wiki-persian-green: #1DAB98;
+  --wiki-emerald: #00D987;
+  --wiki-tea-green: #B4F9CD;
+  --wiki-mustard: #FFDE83;
+  --wiki-mexican-pink: #DC0D7F;
+
+  /* Inidigo - Darker variants*/
+  --wiki-inidgo-10-d: color-mix(in oklab, var(--wiki-inidgo), black 10%);
+  --wiki-inidgo-20-d: color-mix(in oklab, var(--wiki-inidgo), black 20%);
+  --wiki-inidgo-30-d: color-mix(in oklab, var(--wiki-inidgo), black 30%);
+  --wiki-inidgo-40-d: color-mix(in oklab, var(--wiki-inidgo), black 40%);
+  --wiki-inidgo-50-d: color-mix(in oklab, var(--wiki-inidgo), black 50%);
+  --wiki-inidgo-60-d: color-mix(in oklab, var(--wiki-inidgo), black 60%);
+  --wiki-inidgo-70-d: color-mix(in oklab, var(--wiki-inidgo), black 70%);
+  --wiki-inidgo-80-d: color-mix(in oklab, var(--wiki-inidgo), black 80%);
+  --wiki-inidgo-90-d: color-mix(in oklab, var(--wiki-inidgo), black 90%);
+  /* Inidgo - Lighter variants*/
+  --wiki-inidgo-10-l: color-mix(in oklab, var(--wiki-inidgo), white 10%);
+  --wiki-inidgo-20-l: color-mix(in oklab, var(--wiki-inidgo), white 20%);
+  --wiki-inidgo-30-l: color-mix(in oklab, var(--wiki-inidgo), white 30%);
+  --wiki-inidgo-40-l: color-mix(in oklab, var(--wiki-inidgo), white 40%);
+  --wiki-inidgo-50-l: color-mix(in oklab, var(--wiki-inidgo), white 50%);
+  --wiki-inidgo-60-l: color-mix(in oklab, var(--wiki-inidgo), white 60%);
+  --wiki-inidgo-70-l: color-mix(in oklab, var(--wiki-inidgo), white 70%);
+  --wiki-inidgo-90-l: color-mix(in oklab, var(--wiki-inidgo), white 90%);
+  --wiki-inidgo-95-l: color-mix(in oklab, var(--wiki-inidgo), white 95%);
+
+  /* Bleu - Darker variants*/
+  --wiki-bleu-50-d: color-mix(in oklab, var(--wiki-bleu), black 50%);
+  /* Bleu - Lighter variants*/
+  --wiki-bleu-50-l: color-mix(in oklab, var(--wiki-bleu), white 50%);
+
+  /* Midnight Green - Darker variants*/
+  --wiki-midnight-green-20-d: color-mix(in oklab, var(--wiki-midnight-green), black 20%);
+  /* Midnight Green - Lighter variants*/
+  --wiki-midnight-green-20-l: color-mix(in oklab, var(--wiki-midnight-green), white 20%);
+
+  /* Tea Green - Darker variants*/
+  --wiki-tea-green-50-d: color-mix(in oklab, var(--wiki-tea-green), black 50%);
+  /* Tea Green - Lighter variants*/
+  --wiki-tea-green-50-l: color-mix(in oklab, var(--wiki-tea-green), white 50%);
+
+  /* RAG Colours */
+  --wiki-red: #D2222D;
+  --wiki-amber: #FFBF00;
+  --wiki-green: #238823;
+
+  /* Other Colours */
+  --wiki-white: #FFFFFF;
+  --wiki-black: #000000;
+  --wiki-inidgo-background: hsl(from var(--wiki-inidgo) h calc(s * 0.35) calc(l * 0.45));
+  --wiki-inidgo-code-background: hsl(from var(--wiki-inidgo) h calc(s * 0.45) calc(l * 0.55));
+}
+
+/*
+------------------------------
+  Material Theme Overrides
+  (Light mode / default)
+------------------------------
+*/
+
+[data-md-color-scheme="default"] {
+  /* Primary */
+  --md-primary-fg-color: var(--wiki-inidgo);
+  --md-primary-fg-color--light: var(--wiki-green);
+  --md-primary-fg-color--dark: var(--wiki-amber);
+  --md-primary-bg-color: var(--wiki-white);
+
+  /* Accent */
+  --md-accent-fg-color: var(--wiki-amber);
+  --md-accent-fg-color--transparent: var(--wiki-inidgo-90-l);
+  --md-accent-bg-color: var(--wiki-white);
+  --md-accent-bg-color--light: var(--wiki-green);
+
+  /* Typography & links */
+  --md-typeset-color: var(--wiki-inidgo-80-d);
+  --md-typeset-a-color: var(--wiki-inidgo);
+  --md-typeset-a-color--hover: var(--wiki-green);
+
+  /* Code */
+  --md-code-bg-color: var(--wiki-inidgo-90-l);
+  --md-code-fg-color: var(--wiki-inidgo-60-d);
+
+  /* Footer */
+  --md-footer-bg-color: var(--wiki-inidgo);
+  --md-footer-bg-color--dark: var(--wiki-inidgo-70-d);
+  --md-footer-fg-color: var(--wiki-amber);
+  --md-footer-fg-color--light: var(--wiki-inidgo-50-l);
+  --md-footer-fg-color--lighter: var(--wiki-white);
+
+  /* Background */
+  --md-default-bg-color: var(--wiki-white);
+  --md-default-fg-color: var(--wiki-inidgo-50-d);
+}
+
+/*
+------------------------------
+  Material Theme Overrides
+  (Dark mode / slate)
+------------------------------
+*/
+
+[data-md-color-scheme="slate"] {
+  /* Primary */
+  --md-primary-fg-color: var(--wiki-inidgo);
+  --md-primary-fg-color--light: var(--wiki-green);
+  --md-primary-fg-color--dark: var(--wiki-amber);
+  --md-primary-bg-color: var(--wiki-white);
+
+  /* Accent */
+  --md-accent-fg-color: var(--wiki-amber);
+  --md-accent-fg-color--transparent: var(--wiki-inidgo-code-background);
+  --md-accent-bg-color: var(--wiki-white);
+  --md-accent-bg-color--light: var(--wiki-green);
+
+  /* Typography & links */
+  --md-typeset-color: var(--wiki-white);
+  --md-typeset-a-color: var(--wiki-inidgo-50-l);
+
+  /* Code */
+  --md-code-bg-color: var(--wiki-inidgo-code-background);
+  --md-code-fg-color: var(--wiki-inidgo-50-l);
+
+  /* Footer */
+  --md-footer-bg-color: var(--wiki-inidgo);
+  --md-footer-bg-color--dark: var(--wiki-inidgo-70-d);
+  --md-footer-fg-color: var(--wiki-amber);
+  --md-footer-fg-color--light: var(--wiki-inidgo-50-l);
+  --md-footer-fg-color--lighter: var(--wiki-white);
+
+  /* Background */
+  --md-default-bg-color: var(--wiki-inidgo-background);
+  --md-default-fg-color: var(--wiki-inidgo-50-l);
+}
+
+/* 
+------------------------------
+  Reusable Components
+------------------------------
+*/
+
+/* headers */
+.header {
+  text-align: center;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, var(--wiki-inidgo-20-d) 0%, var(--wiki-inidgo-20-l) 100%);
+  border-radius: 10px;
+  margin: 20px 0;
+}
+
+.header--wiki-guide {
+  background: linear-gradient(135deg, var(--wiki-midnight-green-20-d) 0%, var(--wiki-midnight-green-20-l) 100%);
+}
+
+.header h1 {
+  font-family: var(--md-text-font);
+  font-size: 48px;
+  font-weight: 700;
+  color: var(--wiki-white);
+  margin: 0 0 16px 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+}
+
+.header p {
+  font-family: var(--md-text-font);
+  font-size: 20px;
+  color: var(--wiki-inidgo-90-l);
+  margin: 0;
+  font-weight: 400;
+}
+
+/* callouts */
+.callout {
+  /* default accent */
+  --callout-accent: var(--wiki-bleu);
+
+  border-left: 5px solid var(--callout-accent);
+  padding: 14px 16px;
+  margin: 18px 0;
+  border-radius: 8px;
+  background: var(--md-code-bg-color);
+  font-family: var(--md-text-font);
+}
+
+.callout__title {
+  font-weight: 700;
+  margin: 0 0 6px 0;
+
+  /* 👇 title follows the same accent as the border */
+  color: var(--callout-accent);
+}
+
+.callout__body {
+  margin: 0;
+  color: var(--md-typeset-color);
+}
+
+/* Variants: set the accent once */
+.callout--info    { --callout-accent: var(--wiki-bleu); }
+.callout--positive{ --callout-accent: var(--wiki-green); }
+.callout--warning { --callout-accent: var(--wiki-amber); }
+.callout--negative{ --callout-accent: var(--wiki-red); }
+
+
+/* META FOOTER (page information) */
+.page-meta {
+  width: 100%;
+  max-width: 1000px;
+  margin: 24px auto;
+}
+
+.page-meta table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.page-meta th {
+  background: var(--wiki-inidgo);
+  color: var(--wiki-white);
+  text-align: left;
+  padding: 12px;
+}
+
+.page-meta td {
+  padding: 12px;
+  border: 1px solid var(--wiki-inidgo-90-l);
+  color: var(--md-typeset-color);
+}
+
+.page-meta tr:nth-child(even) td {
+  background: var(--wiki-inidgo-95-l);
+}
+
+/* BADGES (optional) */
+.badge {
+  display: inline-block;
+  padding: 2px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: var(--md-text-font);
+  letter-spacing: 0.02em;
+}
+
+.badge--draft { background: var(--wiki-amber); color: var(--wiki-inidgo-80-d); }
+.badge--approved { background: var(--wiki-green); color: var(--wiki-white); }
+.badge--deprecated { background: var(--wiki-red); color: var(--wiki-white); }
