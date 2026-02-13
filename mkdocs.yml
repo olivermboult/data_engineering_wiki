@@ -1,1 +1,112 @@
-site_name: My Docs
+
+
+
+# Project information
+site_name: Data Engineering Wiki                                  # The title of your documentation site
+site_author: Oliver Boult                                         # Author or maintainer of the documentation
+site_description: >-                                              # A short description of the site
+  This wiki site documents all data engineering designs, practices & processes.
+
+# Repository
+repo_name: repos/data_engineering_wiki                            # Display name for the linked repository
+repo_url: https://github.com/olivermboult/data_engineering_wiki   # URL to the source code repository
+
+# Configuration
+docs_dir: wiki                                                    # Directory containing your Markdown documentation files
+
+theme:
+  name: material                                                  # Use the Material for MkDocs theme
+  custom_dir: wiki/wiki_assets                                    # Path to custom theme overrides (e.g., templates, partials)
+  #logo: wiki/wiki_assets/SmallLogo.png                            # Custom Logo
+  features: 
+  # Navigation enhancements
+    - navigation.instant                                                # Enables Single Page Application-like instant loading for faster navigation
+    - navigation.instant.progress                                       # Shows a loading bar for slow connections
+    #- navigation.instant.preview                                        # Enables hover previews for internal links
+    - navigation.tracking                                               # Updates the URL with the active anchor as you scroll
+    #- navigation.tabs                                                   # Renders top-level sections as tabs on large screens
+    #- navigation.tabs.sticky                                            # Keeps tabs visible while scrolling
+    #- navigation.sections                                               # Groups top-level sections in the sidebar
+    #- navigation.expand                                                 # Expands all sidebar sections by default (incompatible with navigation.prune)
+    #- navigation.prune                                                  # Reduces HTML size by pruning hidden navigation items (incompatible with navigation.expand)
+    #- navigation.indexes                                                # Allows index.md files to act as section landing pages (incompatible with toc.integrate)
+    - navigation.top                                                    # Adds a back-to-top button when scrolling up
+  # Table of Contents enhancements                                    
+    - toc.follow                                                        # Keeps the active TOC item visible in the sidebar
+    #- toc.integrate                                                     # Integrates the TOC into the main navigation sidebar (incompatible with navigation.indexes)
+  # Search enhancements
+    - search.suggest                                                    # Enables autocomplete suggestions for the last word typed in the search bar. Users can accept suggestions using the Right Arrow key.
+    - search.highlight                                                  # Highlights all occurrences of the search term on the destination page after clicking a search result.
+    - search.share                                                      # Adds a share button next to the search reset button, allowing users to copy a link to the current search query and results.
+  # Header enhancements
+    - header.autohide                                                   # Header is automatically hidden when the user scrolls past a certain threshold.
+    - announce.dismiss                                                  # Adds a dismiss button to temporary announcements, allowing users to mark them as read and hide them from view.
+  # Footer enhancements
+    #- navigation.footer                                                 # The footer can include links to the previous and next page of the current page.
+
+  palette:
+    - scheme: default                                                   # Light mode color scheme
+      primary: custom                                                   # Uses custom primary color defined in extra CSS
+      accent: custom                                                    # Uses custom accent color defined in extra CSS
+      toggle:
+        icon: material/weather-night                                    # Icon for switching to dark mode
+        name: Switch to dark mode                                       # Tooltip for the toggle
+
+    - scheme: slate                                                     # Dark mode color scheme
+      primary: custom                                                   # Uses custom primary color defined in extra CSS
+      accent: custom                                                    # Uses custom accent color defined in extra CSS
+      toggle:
+        icon: material/weather-sunny                                    # Icon for switching to light mode
+        name: Switch to light mode                                      # Tooltip for the toggle
+
+  language: en                                                          # Language of the UI elements
+
+#nav:
+#  - Home:
+#      - Overview: index.md
+#      - Get Involved: 
+#        - Task Management: Home/TaskManagement.md
+#  - The Principles: 
+#    - Objectives: Principles/Objectives.md
+#    - Development:
+#        - Accessing the Framework: Principles/Development/Access.md
+#        - Repository & Branching: Principles/Development/Repository.md
+#        - Approval Process: Principles/Development/Approvals.md
+#        - Development Workflow: Principles/Development/Processes.md
+#        - Versioning Strategy: Principles/Development/Versioning.md
+#    - Documentation: 
+#        - Overview: Principles/Documentation/Overview.md
+#  - The Framework: 
+#    - Deployment: 
+#        - deploy_documentation: Framework/Deployment/deploy_documentation.md
+#    - Azure Data Factory: 
+#        - High Level Architecture: Framework/Platforms/AzureDataFactory/HighLevel.md
+#        - Components: 
+#            - Linked Services: Framework/Platforms/AzureDataFactory/Components/LinkedServices.md
+
+plugins:
+  - search                                                              # Enables the built-in Material for MkDocs search plugin
+  - mermaid2                                                            # Enables Mermaid diagrams
+  - print-site:
+      add_to_navigation: true
+      print_page_title: 'Export'
+      print_page_basename: 'export_data_engineering_wiki'
+      # Table of contents
+      add_table_of_contents: true
+      toc_title: 'Table of Contents'
+      toc_depth: 3
+      # Content-related
+      add_full_urls: false
+      enumerate_headings: false
+      enumerate_figures: false
+      add_cover_page: false
+      cover_page_template: ""
+      add_print_site_banner: false
+      path_to_pdf: ""
+      include_css: true
+      enabled: true
+      exclude:
+
+# Additional custom styles
+extra_css:
+  - style.css                                                       # Path to your custom CSS file for styling overrides
