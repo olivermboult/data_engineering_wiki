@@ -63,9 +63,9 @@
   --wiki-bleu-50-l: color-mix(in oklab, var(--wiki-bleu), white 50%);
 
   /* Midnight Green - Darker variants*/
-  --wiki-midnight-green-10-d: color-mix(in oklab, var(--wiki-midnight-green), black 10%);
+  --wiki-midnight-green-20-d: color-mix(in oklab, var(--wiki-midnight-green), black 20%);
   /* Midnight Green - Lighter variants*/
-  --wiki-midnight-green-10-l: color-mix(in oklab, var(--wiki-midnight-green), white 10%);
+  --wiki-midnight-green-20-l: color-mix(in oklab, var(--wiki-midnight-green), white 20%);
 
   /* Tea Green - Darker variants*/
   --wiki-tea-green-50-d: color-mix(in oklab, var(--wiki-tea-green), black 50%);
@@ -175,13 +175,13 @@
 .header {
   text-align: center;
   padding: 40px 20px;
-  background: linear-gradient(135deg, var(--wiki-inidgo-10-d) 0%, var(--wiki-inidgo-10-l) 100%);
+  background: linear-gradient(135deg, var(--wiki-inidgo-20-d) 0%, var(--wiki-inidgo-20-l) 100%);
   border-radius: 10px;
   margin: 20px 0;
 }
 
 .header--wiki-guide {
-  background: linear-gradient(135deg, var(--wiki-midnight-green-10-d) 0%, var(--wiki-midnight-green-10-l) 100%);
+  background: linear-gradient(135deg, var(--wiki-midnight-green-20-d) 0%, var(--wiki-midnight-green-20-l) 100%);
 }
 
 .header h1 {
